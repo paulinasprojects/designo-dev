@@ -34,6 +34,8 @@
     margin-right: 39px;
   }
 
+  }
+
   .hero-image-container {
     margin-top: 220px;
 
@@ -70,7 +72,37 @@
     @media (min-width: 850px) and (max-width: 1099px) {
      width: 90%;
     }
+}
+
+
+.hero-section::after{
+  content: "";
+  display: block;
+  background: url(/assets/shared/desktop/bg-pattern-leaf.svg) no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  left: 0px;
+  top: 500px;
+  z-index: -999;
+}
+
+@media (max-width: 699px) {
+  .hero-section::after{
+    display: none;
+}
+}
+
+@media (min-width: 700px) and (max-width: 849px) {
+  .hero-section::after{
+    display: none;
   }
+}
+
+@media (min-width: 850px) and (max-width: 1099px) {
+  .hero-section::after{
+    display: none;
+}
 }
 
 .hero-text-container {
