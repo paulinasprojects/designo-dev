@@ -77,3 +77,24 @@ export const appDesignProjectsData = [
     description: "A VR experience app made for Loopstudios",
   },
 ];
+
+export const graphicDesignProjectsData = [
+  {
+    id: 1,
+    image: "/assets/graphic-design/desktop/image-change.jpg",
+    title: "Tim Brown",
+    description: "A book cover designed for Tim Brown's new release, 'Change'",
+  },
+  {
+    id: 2,
+    image: "/assets/graphic-design/desktop/image-boxed-water.jpg",
+    title: "Boxed Water",
+    description: "A simple packaging concept made for Boxed Water",
+  },
+  {
+    id: 3,
+    image: "/assets/graphic-design/desktop/image-science.jpg",
+    title: "Science!",
+    description: "A poster made in collaboration with the Federal Art Project",
+  },
+];

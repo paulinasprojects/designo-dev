@@ -24,7 +24,7 @@ export const Footer = () => {
       <div className="footer-end">
         <div className="footer-end-content">
           <div className="footer-logo-nav">
-            <div className="logo">
+            <div className="footer-logo">
               <Link to="/">
                 <img src="/assets/shared/desktop/logo-light.png" className="logo-image-light" alt="" />
               </Link>

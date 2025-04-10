@@ -1,5 +1,4 @@
 .web-design-projects-section {
-  /* position: relative; */
   margin-top: 160px;
   padding-left: 165px;
   padding-right: 165px;
@@ -143,23 +142,4 @@
   color: var(--primary-white);
   font-weight: normal;
   line-height: 26px;
-}
-
-.other-projects {
-  margin-top: 160px;
-  display: flex;
-  flex-direction: row;
-
-  @media (max-width: 699px) {
-    flex-direction: column;
-  }
-
-  @media (min-width: 700px) and (max-width: 849px) {
-    flex-direction: column;
-  }
-
-
-  @media (min-width: 850px) and (max-width: 1099px) {
-    flex-direction: column;
-  }
 }

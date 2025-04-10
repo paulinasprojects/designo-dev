@@ -107,7 +107,7 @@ footer {
   }
 }
 
-.logo {
+.footer-logo {
   @media (max-width: 699px) {
     margin-bottom: 40px;
   }
