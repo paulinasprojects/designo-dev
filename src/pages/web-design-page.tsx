@@ -1,6 +1,18 @@
+import { PageHeading } from "../components/page-heading"
+
 const WebDesignPage = () => {
   return (
-    <div>WebDesignPage</div>
+    <>
+      <PageHeading
+        title="Web Design"
+        description={
+          <>
+            We build websites that serve as powerful marketing tools<br />
+            and bring memorable brand experiences.
+          </>
+        }
+      />
+    </>
   )
 }
 

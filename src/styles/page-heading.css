@@ -1,0 +1,36 @@
+.page-heading-section {
+  background: hsl(11deg, 73%, 66%) url(/assets/shared/desktop/bg-pattern-call-to-action.svg) no-repeat;
+  background-position: 210px -150px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  padding: 64px 0px 64px 0px;
+  margin-top: 50px;
+  margin-left: 165px;
+  margin-right: 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (max-width: 699px) {
+    background-position: bottom center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 105px 0 105px 0px;
+    border-radius: 0px;
+  }
+
+  @media (min-width: 850px) and (max-width: 1099px) {
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+
+  @media (min-width: 700px) and (max-width: 849px) {
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+}
+
+.page-heading-section {
+
+}
