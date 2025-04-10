@@ -1,4 +1,5 @@
 import { PageHeading } from "../components/page-heading"
+import { WebDesignProjects } from "./web-design-projects"
 
 const WebDesignPage = () => {
   return (
@@ -12,6 +13,7 @@ const WebDesignPage = () => {
           </>
         }
       />
+      <WebDesignProjects/>
     </>
   )
 }
