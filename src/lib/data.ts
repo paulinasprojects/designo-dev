@@ -41,3 +41,39 @@ export const webDesignProjectsData = [
       "Get expert training in coding, data, design, and digital marketing",
   },
 ];
+
+export const appDesignProjectsData = [
+  {
+    id: 1,
+    image: "/assets/app-design/desktop/image-airfilter.jpg",
+    title: "Airfilter",
+    description:
+      "Solving the problem of poor indoor air quality by filtering the air",
+  },
+  {
+    id: 2,
+    image: "/assets/app-design/desktop/image-eyecam.jpg",
+    title: "Eyecam",
+    description:
+      "Product that lets you edit your favorite photos and videos at any time",
+  },
+  {
+    id: 3,
+    image: "/assets/app-design/desktop/image-faceit.jpg",
+    title: "Faceit",
+    description:
+      "Get to meet your favorite internet superstar with the faceit app",
+  },
+  {
+    id: 4,
+    image: "/assets/app-design/desktop/image-todo.jpg",
+    title: "Todo",
+    description: "A todo app that features cloud sync with light and dark mode",
+  },
+  {
+    id: 5,
+    image: "/assets/app-design/desktop/image-loopstudios.jpg",
+    title: "Loopstudios",
+    description: "A VR experience app made for Loopstudios",
+  },
+];

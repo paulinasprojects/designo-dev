@@ -1,11 +1,11 @@
 
-interface WebDesignProjectCardProps {
+interface ProjectCardProps {
   image: string;
   title: string;
   description: string;
 }
 
-export const WebDesignProjectCard = ({ image, title, description}: WebDesignProjectCardProps) => {
+export const ProjectCard = ({ image, title, description}: ProjectCardProps) => {
   return (
     <div className="project-express">
       <img src={image} alt="" />
