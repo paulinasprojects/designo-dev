@@ -1,6 +1,10 @@
+import { AboutUsHero } from "../components/about-us-hero"
+
 const AboutUsPage = () => {
   return (
-    <div>AboutUsPage</div>
+    <div>
+      <AboutUsHero/>
+    </div>
   )
 }
 

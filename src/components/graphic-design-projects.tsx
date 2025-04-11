@@ -1,7 +1,7 @@
 import { graphicDesignProjectsData } from "../lib/data";
-import "../styles/graphic-design-projects.css";
 import { OtherProjects } from "./other-projects";
 import { ProjectCard } from "./web-design-project-card";
+import "../styles/graphic-design-projects.css";
 
 export const GraphicDesignProjects = () => {
   return (
