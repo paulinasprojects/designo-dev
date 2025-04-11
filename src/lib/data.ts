@@ -98,3 +98,21 @@ export const graphicDesignProjectsData = [
     description: "A poster made in collaboration with the Federal Art Project",
   },
 ];
+
+export const aboutUsLocationsData = [
+  {
+    id: 1,
+    title: "Canada",
+    image: "/assets/shared/desktop/illustration-canada.svg",
+  },
+  {
+    id: 2,
+    title: "Australia",
+    image: "/assets/shared/desktop/illustration-australia.svg",
+  },
+  {
+    id: 3,
+    title: "United Kingdom",
+    image: "/assets/shared/desktop/illustration-united-kingdom.svg",
+  },
+];

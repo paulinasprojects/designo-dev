@@ -31,6 +31,21 @@
   z-index: -99;
 }
 
+.about-us-talent-section::after {
+  
+  @media (max-width: 699px) {
+    display: none;
+  }
+
+  @media (min-width: 700px) and (max-width: 849px) {
+    display: none;
+  }
+
+  @media (min-width: 850px) and (max-width: 1099px) {
+    display: none;
+  }
+}
+
 .about-us-talent-main-container {
   display: flex;
 
@@ -123,11 +138,11 @@
   padding-bottom: 154px;
   padding-left: 94px;
   padding-right: 94px;
-  max-width: 660px;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   gap: 24px;
 
 
