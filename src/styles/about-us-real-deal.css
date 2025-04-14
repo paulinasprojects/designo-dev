@@ -82,8 +82,6 @@
 }
 
 .about-us-real-deal-image-container img {
-  /* width: 476px;
-  height: 714px; */
   width: 100%;
   object-fit: cover;
   border-top-right-radius: 8px;

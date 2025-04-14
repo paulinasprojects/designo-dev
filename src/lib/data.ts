@@ -116,3 +116,36 @@ export const aboutUsLocationsData = [
     image: "/assets/shared/desktop/illustration-united-kingdom.svg",
   },
 ];
+
+export const locationsData = [
+  {
+    id: 1,
+    title: "Canada",
+    address: "3886 Wellington Street Toronto, Ontario M9C 3J5",
+    phone: "+1 253-863-8967",
+    email: "contact@designo.co",
+    desktopImage: "/assets/locations/desktop/image-map-canada.png",
+    tabletImage: "/assets/locations/tablet/image-map-canada.png",
+    mobileImage: "/assets/locations/desktop/image-map-canada.png",
+  },
+  {
+    id: 2,
+    title: "Australia",
+    address: "19 Balonne Street New South Wales 2443",
+    phone: "(02) 6720 9092",
+    email: "contact@designo.au",
+    desktopImage: "/assets/locations/desktop/image-map-australia.png",
+    tabletImage: "/assets/locations/tablet/image-map-australia.png",
+    mobileImage: "/assets/locations/desktop/image-map-australia.png",
+  },
+  {
+    id: 3,
+    title: "United Kingdom",
+    address: "13 Colorado Way Rhyd-y-fro SA8 9GA",
+    phone: "078 3115 1400",
+    email: "contact@designo.uk",
+    desktopImage: "/assets/locations/desktop/image-map-united-kingdom.png",
+    tabletImage: "/assets/locations/tablet/image-map-uk.png",
+    mobileImage: "/assets/locations/desktop/image-map-united-kingdom.png",
+  },
+];
