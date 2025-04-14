@@ -1,6 +1,12 @@
+import { AboutUsLocation } from "../components/about-us-location"
+import { ContactUsForm } from "../components/contact-us-form"
+
 const ContactUsPage = () => {
   return (
-    <div>ContactUsPage</div>
+    <div>
+      <ContactUsForm/>
+      <AboutUsLocation/>
+    </div>
   )
 }
 
