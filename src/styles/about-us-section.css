@@ -43,6 +43,11 @@
   }
 }
 
+.passionate img {
+  background: url(/assets/shared/desktop/bg-pattern-small-circle.svg)  no-repeat;
+  z-index: -999;
+}
+
 .about-us-section::after{
   content: ""; 
   display: block;

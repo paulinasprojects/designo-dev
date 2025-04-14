@@ -3,7 +3,6 @@
   margin-right: 165px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 95px;
   padding-left: 95px;
   padding-right: 95px;
@@ -102,6 +101,7 @@
   width: 380px;
   height: 38px;
   padding: 5px;
+  color: var(--primary-white);
 
   @media (min-width: 700px) and (max-width: 849px) {
     width: 100%;
@@ -114,8 +114,7 @@
 
 .contact-us-form-container input:focus {
   outline: none !important;
-  border: 1px solid var(--primary-white);
-  border-radius: 5px;
+  border-bottom: 3px solid var(--primary-white);
 }
 
 .contact-us-form-container input::placeholder {
@@ -130,6 +129,7 @@
   border: none;
   background: transparent;
   border-bottom: 1px solid var(--primary-white);
+  color: var(--primary-white);
   width: 380px;
   height: 102px;
   padding: 5px;
@@ -145,8 +145,7 @@
 
 .contact-us-form-container textarea:focus {
   outline: none !important;
-  border: 1px solid var(--primary-white);
-  border-radius: 5px;
+  border-bottom: 3px solid var(--primary-white);
 }
 
 .contact-us-form-container textarea::placeholder {

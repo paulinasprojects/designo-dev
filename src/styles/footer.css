@@ -65,7 +65,7 @@ footer {
   cursor: pointer;
   font-size: var(--fs-15);
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   transition: background-color 0.3s ease;
   transition: color 0.3s ease;
 }
