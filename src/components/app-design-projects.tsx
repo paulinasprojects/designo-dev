@@ -11,43 +11,43 @@ export const AppDesignProjects = () => {
 
   return (
       <AnimatePresence initial={isMobile ? false : true}>
-    <section className="app-design-projects-section">
-      <motion.div 
-        className="app-design-projects-container"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{once: true, amount: 0.4}}
-        variants={containerVariants}
-      >
-        {appDesignProjectsData.map((data) => (
-          <motion.div key={data.id} variants={itemVariants}>
-            <ProjectCard
-              description={data.description}
-              image={data.image}
-              title={data.title}
+        <section className="app-design-projects-section">
+          <motion.div 
+            className="app-design-projects-container"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true, amount: 0.4}}
+            variants={containerVariants}
+          >
+            {appDesignProjectsData.map((data) => (
+              <motion.div key={data.id} variants={itemVariants}>
+                <ProjectCard
+                  description={data.description}
+                  image={data.image}
+                  title={data.title}
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+          <motion.div 
+            className="flex"
+            initial={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.9, ease: "easeIn" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} 
+          >
+            <OtherProjects
+              href="/web-design"
+              image="/assets/home/desktop/image-web-design-small.jpg"
+              title="Web Design"
+            />
+            <OtherProjects
+              href="/graphic-design"
+              image="/assets/home/desktop/image-graphic-design.jpg"
+              title="Graphic Design"
             />
           </motion.div>
-        ))}
-      </motion.div>
-      <motion.div 
-        className="flex"
-        initial={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.9, ease: "easeIn" }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }} 
-      >
-        <OtherProjects
-          href="/web-design"
-          image="/assets/home/desktop/image-web-design-small.jpg"
-          title="Web Design"
-        />
-        <OtherProjects
-          href="/graphic-design"
-          image="/assets/home/desktop/image-graphic-design.jpg"
-          title="Graphic Design"
-        />
-      </motion.div>
-    </section>
+        </section>
       </AnimatePresence>
   )
 }

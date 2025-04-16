@@ -17,14 +17,16 @@
   @media (min-width: 700px) and (max-width: 849px) {
     padding-left: 39px;
     padding-right: 39px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: left;
   }
 
   @media (min-width: 850px) and (max-width: 1099px) {
     padding-left: 29px;
     padding-right: 29px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: left;
   }
 
