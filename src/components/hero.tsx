@@ -1,10 +1,21 @@
+import { motion } from "framer-motion";
 import "../styles/hero.css";
 
 export const Hero = () => {
   return (
-    <section className="hero-section">
-    <div className="hero-text-container">
-      <div className="hero-text-container-text">
+    <section 
+      className="hero-section"
+    >
+    <div 
+      className="hero-text-container"
+    >
+      <motion.div 
+        className="hero-text-container-text"
+        initial={{ opacity: 0, x: -20 }}
+        transition={{ duration: 0.9, ease: "easeIn" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+      >
         <h1 className="hero-h1">
           Award-winning custom  designs and digital <br /> branding solutions
         </h1>
@@ -15,10 +26,16 @@ export const Hero = () => {
         <button className="hero-button">
             Learn more
         </button>
-      </div>
-      <div className="hero-image-container">
-      <img className="hero-image" src="/assets/home/desktop/image-hero-phone.png"/>
-      </div>
+      </motion.div>
+      <motion.div 
+        initial={{ opacity: 0, x: 20 }}
+        transition={{ duration: 0.9, ease: "easeIn" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+        className="hero-image-container"
+      >
+        <img className="hero-image" src="/assets/home/desktop/image-hero-phone.png"/>
+      </motion.div>
     </div>
   </section>
   )

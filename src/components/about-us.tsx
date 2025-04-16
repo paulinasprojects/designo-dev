@@ -1,8 +1,15 @@
+import { motion } from "framer-motion";
 import "../styles/about-us-section.css";
 
 export const AboutUsSection = () => {
   return (
-    <section className="about-us-section">
+    <motion.section 
+      className="about-us-section"
+      initial={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.9, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+      >
       <div className="passionate">
         <img src="/assets/home/desktop/illustration-passionate.svg"/>
         <div className="about-us-content">
@@ -42,6 +49,6 @@ export const AboutUsSection = () => {
             </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
