@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "../lib/constants";
 import { graphicDesignProjectsData } from "../lib/data";
 import { OtherProjects } from "./other-projects";
 import { ProjectCard } from "./web-design-project-card";
@@ -6,17 +8,30 @@ import "../styles/graphic-design-projects.css";
 export const GraphicDesignProjects = () => {
   return (
     <section className="graphic-design-projects-section">
-      <div className="graphic-design-projects-container">
+      <motion.div 
+        className="graphic-design-projects-container"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.4}}
+        variants={containerVariants}
+      >
         {graphicDesignProjectsData.map((data) => (
-          <ProjectCard
-            key={data.id}
+         <motion.div key={data.id} variants={itemVariants}>
+           <ProjectCard
             description={data.description}
             image={data.image}
             title={data.title}
           />
+         </motion.div>
         ))}
-      </div>
-      <div className="flex">
+      </motion.div>
+      <motion.div 
+        className="flex"
+        initial={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.9, ease: "easeIn" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }} 
+      >
         <OtherProjects
           href="/web-design"
           image="/assets/home/desktop/image-web-design-small.jpg"
@@ -27,7 +42,7 @@ export const GraphicDesignProjects = () => {
           image="/assets/home/desktop/image-app-design.jpg"
           title="App Design"
         />
-      </div>
+      </motion.div>
     </section>
   )
 }

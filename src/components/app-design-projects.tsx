@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+import { containerVariants, itemVariants } from "../lib/constants";
 import { appDesignProjectsData } from "../lib/data"
 import { OtherProjects } from "./other-projects"
 import { ProjectCard } from "./web-design-project-card"
@@ -6,17 +8,30 @@ import "../styles/app-design-projects.css"
 export const AppDesignProjects = () => {
   return (
     <section className="app-design-projects-section">
-      <div className="app-design-projects-container">
+      <motion.div 
+        className="app-design-projects-container"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.4}}
+        variants={containerVariants}
+      >
         {appDesignProjectsData.map((data) => (
-          <ProjectCard
-            key={data.id}
-            description={data.description}
-            image={data.image}
-            title={data.title}
-          />
+          <motion.div key={data.id} variants={itemVariants}>
+            <ProjectCard
+              description={data.description}
+              image={data.image}
+              title={data.title}
+            />
+          </motion.div>
         ))}
-      </div>
-      <div className="flex">
+      </motion.div>
+      <motion.div 
+        className="flex"
+        initial={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.9, ease: "easeIn" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }} 
+      >
         <OtherProjects
           href="/web-design"
           image="/assets/home/desktop/image-web-design-small.jpg"
@@ -27,7 +42,7 @@ export const AppDesignProjects = () => {
           image="/assets/home/desktop/image-graphic-design.jpg"
           title="Graphic Design"
         />
-      </div>
+      </motion.div>
     </section>
   )
 }
