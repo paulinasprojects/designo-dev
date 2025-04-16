@@ -97,29 +97,29 @@ export const Footer = () => {
             viewport={{ once: true }} 
           >
             <li>
-                <Link to="#">
-                    <BiLogoFacebookSquare/>
-                </Link>
+              <Link to="#">
+                  <BiLogoFacebookSquare/>
+              </Link>
             </li>
             <li>
-                <Link to="#">
-                    <FaYoutube/>
-                </Link>
+              <Link to="#">
+                  <FaYoutube/>
+              </Link>
             </li>
             <li>
-                <Link to="#">
-                    <FaTwitter/>
-                </Link>
+              <Link to="#">
+                  <FaTwitter/>
+              </Link>
             </li>
             <li>
-                <Link to="#">
-                    <FaPinterest/>
-                </Link>
+              <Link to="#">
+                  <FaPinterest/>
+              </Link>
             </li>
             <li>
-                <Link to="#">
-                    <FaInstagram/>
-                </Link>
+              <Link to="#">
+                  <FaInstagram/>
+              </Link>
             </li>
         </motion.ul>
         </div>

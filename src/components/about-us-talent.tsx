@@ -1,9 +1,16 @@
+import { motion } from "framer-motion";
 import "../styles/about-us-talent.css";
 
 export const AboutUsTalent = () => {
   return (
     <section className="about-us-talent-section">
-      <div className="about-us-talent-main-container">
+      <motion.div 
+        className="about-us-talent-main-container"
+        initial={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.9, ease: "easeIn" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }} 
+      >
       <div className="about-us-talent-image-container">
           <img src="/assets/about/desktop/image-world-class-talent.jpg" alt="" />
           <img src="/assets/about/tablet/image-world-class-talent.jpg" alt="" className="talent-tablet-image" />
@@ -16,7 +23,7 @@ export const AboutUsTalent = () => {
           </p>
           <p>Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission.</p>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
