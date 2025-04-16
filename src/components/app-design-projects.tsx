@@ -1,12 +1,16 @@
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { containerVariants, itemVariants } from "../lib/constants";
+import { useMediaQuery } from "usehooks-ts";
 import { appDesignProjectsData } from "../lib/data"
 import { OtherProjects } from "./other-projects"
 import { ProjectCard } from "./web-design-project-card"
 import "../styles/app-design-projects.css"
 
 export const AppDesignProjects = () => {
+  const isMobile = useMediaQuery("(max-width: 767px)")
+
   return (
+      <AnimatePresence initial={isMobile ? false : true}>
     <section className="app-design-projects-section">
       <motion.div 
         className="app-design-projects-container"
@@ -44,5 +48,6 @@ export const AppDesignProjects = () => {
         />
       </motion.div>
     </section>
+      </AnimatePresence>
   )
 }

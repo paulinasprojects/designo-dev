@@ -1,12 +1,16 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { containerVariants, itemVariants } from "../lib/constants";
+import { useMediaQuery } from "usehooks-ts";
 import { graphicDesignProjectsData } from "../lib/data";
 import { OtherProjects } from "./other-projects";
 import { ProjectCard } from "./web-design-project-card";
 import "../styles/graphic-design-projects.css";
 
 export const GraphicDesignProjects = () => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
+
   return (
+    <AnimatePresence initial={isMobile ? false : true}>
     <section className="graphic-design-projects-section">
       <motion.div 
         className="graphic-design-projects-container"
@@ -44,5 +48,6 @@ export const GraphicDesignProjects = () => {
         />
       </motion.div>
     </section>
+    </AnimatePresence>
   )
 }
